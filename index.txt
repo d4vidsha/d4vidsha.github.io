@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = David sha
+David sha
+Student
 
 Show Contacts
 
 Email
-richard@example.com
+david@davidsha.me
 
 Phone
-+1 (213) 352-2795
+0444444444
 
 Birthday
-June 23, 1982
+November 12, 2002
 
 Location
-Sacramento, California, USA
+Melbourne, Victoria, Australia
 
 # navbar
 
