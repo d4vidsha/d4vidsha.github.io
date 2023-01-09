@@ -2,8 +2,8 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = David sha
-David sha
+alt = David Sha
+David Sha
 Student
 
 Show Contacts
