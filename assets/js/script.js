@@ -154,30 +154,7 @@ form.addEventListener("submit", function (event) {
     });
 });   
 
-// // add event to form submit buttom
-// document.getElementById('contact-form').addEventListener('click', function(event) {
-//   // prevent the form from being submitted
-//   event.preventDefault();
-//   console.log('Form submitted!' + event);
-
-//   // send the webhook
-//   fetch('http://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551', {
-//     method: 'POST',
-//     body: new FormData(form)
-//   }).then(function() {
-//     // show a message indicating that the webhook has been sent
-//     alert('Webhook sent!');
-//   });
-// });
-
-// // add event to form submit button
-// formBtn.addEventListener("submit", function (event) {
-
-//   // // prevent form submit
-//   // event.preventDefault();
-
-//   // show alert message
-//   alert("Form submitted successfully!");
+// form.addEventListener("submit", function (event) {
 
 //   // // reset form
 //   // form.reset();
