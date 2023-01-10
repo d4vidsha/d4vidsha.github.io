@@ -134,25 +134,25 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// // add submit event to form
-// form.addEventListener("submit", function (event) {
-//   console.log('Submitted!');
-//   // prevent form from being submitted
-//   event.preventDefault();
+// add submit event to form
+form.addEventListener("submit", function (event) {
+  console.log('Submitted!');
+  // prevent form from being submitted
+  event.preventDefault();
 
-//   // send submission details to webhook
-//   fetch("https://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551", {
-//     method: "POST",
-//     body: new FormData(form),
-//   })
-//     .then(function () {
-//       // show message indicating that webhook has been sent
-//       alert("Webhook sent!");
-//     })
-//     .catch(function (error) {
-//       console.error(error);
-//     });
-// });   
+  // send submission details to webhook
+  fetch("https://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551", {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then(function () {
+      // show message indicating that webhook has been sent
+      alert("Webhook sent!");
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+});   
 
 // form.addEventListener("submit", function (event) {
 
