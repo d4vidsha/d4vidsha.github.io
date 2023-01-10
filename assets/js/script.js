@@ -137,17 +137,17 @@ for (let i = 0; i < formInputs.length; i++) {
 // add event to form submit button
 formBtn.addEventListener("submit", function (event) {
 
-  // prevent form submit
-  event.preventDefault();
+  // // prevent form submit
+  // event.preventDefault();
 
   // show alert message
   alert("Form submitted successfully!");
 
-  // reset form
-  form.reset();
+  // // reset form
+  // form.reset();
 
-  // disable submit button
-  formBtn.setAttribute("disabled", "");
+  // // disable submit button
+  // formBtn.setAttribute("disabled", "");
 
 });
 
