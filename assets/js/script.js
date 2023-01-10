@@ -168,7 +168,14 @@ const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+  navigationLinks[i].addEventListener("click", function (event) {
+
+    // check if the link is the "Blog" link
+    if(this.innerHTML.toLowerCase() === "blog"){
+        event.preventDefault();
+        window.open("https://blog.davidsha.me", "_blank");
+        return;
+    }
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
