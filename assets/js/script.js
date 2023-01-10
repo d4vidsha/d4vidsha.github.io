@@ -136,15 +136,16 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // add event to form submit buttom
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-  // Prevent the form from being submitted
+  // prevent the form from being submitted
   event.preventDefault();
   console.log('Form submitted!' + event);
-  // Send the webhook
+
+  // send the webhook
   fetch('http://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551', {
     method: 'POST',
     body: new FormData(form)
   }).then(function() {
-    // Show a message indicating that the webhook has been sent
+    // show a message indicating that the webhook has been sent
     alert('Webhook sent!');
   });
 });
