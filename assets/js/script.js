@@ -135,12 +135,12 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // add submit event to form
-form.addEventListener("submit", function (event) {
+formBtn.addEventListener("click", function (event) {
   // prevent form from being submitted
   event.preventDefault();
 
   // send submission details to webhook
-  fetch("http://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551", {
+  fetch("https://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551", {
     method: "POST",
     body: new FormData(form),
   })
@@ -151,7 +151,7 @@ form.addEventListener("submit", function (event) {
     .catch(function (error) {
       console.error(error);
     });
-});
+});   
 
 // // add event to form submit buttom
 // document.getElementById('contact-form').addEventListener('click', function(event) {
