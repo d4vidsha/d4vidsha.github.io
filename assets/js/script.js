@@ -135,7 +135,10 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // add event to form submit button
-formBtn.addEventListener("click", function () {
+formBtn.addEventListener("click", function (event) {
+
+  // prevent form submit
+  event.preventDefault();
 
   // show alert message
   alert("Form submitted successfully!");
