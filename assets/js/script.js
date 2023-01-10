@@ -135,7 +135,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // add event to form submit buttom
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('click', function(event) {
   // prevent the form from being submitted
   event.preventDefault();
   console.log('Form submitted!' + event);
