@@ -173,6 +173,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     // check if the link is the "Blog" link
     if(this.innerHTML.toLowerCase() === "blog"){
         event.preventDefault();
+        // window.location.href = "https://blog.davidsha.me";
         window.open("https://blog.davidsha.me", "_blank");
         return;
     }
