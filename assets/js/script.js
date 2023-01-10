@@ -135,9 +135,9 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // add submit event to form
-form.addEventListener("submit", function (event) {
+const contact_form = document.getElementById("contact_form");
+contact_form.addEventListener("submit", function (event) {
   console.log('Submitted!');
-  log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
   // prevent form from being submitted
   event.preventDefault();
 
