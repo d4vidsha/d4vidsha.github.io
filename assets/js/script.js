@@ -146,14 +146,14 @@ form.addEventListener("submit", event => {
     mode: "no-cors"
   })
     .then(function () {
-      // reset form
-      form.reset();
+      // reset only the message field
+      form.message.value = "";
 
       // disable submit button
       formBtn.setAttribute("disabled", "");
 
-      // show text message on screen indicating that webhook has been sent
-      alert("Message sent successfully");
+      // show message on screen
+      toastr.success("Message sent successfully");
     })
     .catch(function (error) {
       console.error(error);
