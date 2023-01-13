@@ -19,5 +19,3 @@ Before you begin, ensure you have met the following requirements:
 ## License
 
 This project is **free to use** and does not contains any license.
-
-testing commit
