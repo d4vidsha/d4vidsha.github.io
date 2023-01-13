@@ -1,6 +1,7 @@
 version: '3'
 services:
   web:
+    container_name: personal-website
     build:
       context: .
       dockerfile: docker/Dockerfile
