@@ -9,4 +9,5 @@ services:
       - "8993:80"
     volumes:
       - ./website:/usr/share/nginx/html
+    restart: always
     command: nginx -g 'daemon off;'
