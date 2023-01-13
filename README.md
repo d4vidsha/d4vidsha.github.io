@@ -8,9 +8,13 @@ Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-## Installation
+## Installation and usage
 
-1. 
+1. Clone the repository `git clone https://github.com/d4vidsha/personal-website.git`.
+
+2. In the project directory, you can run `docker compose up -d` to spin up the website.
+
+3. Open [http://localhost:8993](http://localhost:8993) to view it in the browser.
 
 ## License
 
