@@ -8,5 +8,4 @@ services:
       - "8993:80"
     volumes:
       - ./website:/usr/share/nginx/html
-      - ./logs:/var/log/nginx
-    command: nginx -g 'daemon on;'
+    command: nginx -g 'daemon off;'
