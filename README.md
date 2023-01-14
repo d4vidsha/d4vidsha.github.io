@@ -4,11 +4,11 @@ This is a fully responsive personal portfolio website, responsive for all device
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin, ensure you have installed the following tools:
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-* [Docker](https://docs.docker.com/get-docker/ "Download Docker") must be installed on your operating system.
-* [Docker Compose](https://docs.docker.com/compose/install/ "Download Docker Compose") must be installed on your operating system.
+* [Git](https://git-scm.com/downloads "Download Git")
+* [Docker](https://docs.docker.com/get-docker/ "Download Docker")
+* [Docker Compose](https://docs.docker.com/compose/install/ "Download Docker Compose")
 
 ## Installation and usage
 
