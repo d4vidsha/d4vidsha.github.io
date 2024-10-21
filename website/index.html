@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3Z1WZ9Y3TT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z1WZ9Y3TT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag("config", "G-3Z1WZ9Y3TT");
+    </script>
 
-    gtag('config', 'G-3Z1WZ9Y3TT');
-  </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Sha</title>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Sha</title>
-
-  <!--
+    <!--
     - jQuery link
   -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!--
+    <!--
     - toastr link
   -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/david-sha.jpg"
+              alt="David Sha"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="David Sha">David Sha</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/david-sha.jpg" alt="David Sha" width="80">
-        </figure>
+            <p class="title">Student & Automation Enthusiast</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="David Sha">David Sha</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Student & Automation Enthusiast</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:david@davidsha.me" class="contact-link"
+                  >david@davidsha.me</a
+                >
+              </div>
 
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:david@davidsha.me" class="contact-link">david@davidsha.me</a>
-            </div>
-
-          <!-- </li>
+              <!-- </li>
 
           <li class="contact-item">
 
@@ -114,7 +126,7 @@
 
           </li> -->
 
-          <!-- <li class="contact-item">
+              <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -127,462 +139,522 @@
             </div>
 
           </li> -->
+            </li>
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <address>Melbourne, Victoria, Australia</address>
+              </div>
+            </li>
+          </ul>
 
-              <address>Melbourne, Victoria, Australia</address>
-            </div>
+          <div class="separator"></div>
 
-          </li>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/david-sha/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-        </ul>
+            <li class="social-item">
+              <a href="https://github.com/d4vidsha" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-        <div class="separator"></div>
+            <li class="social-item">
+              <a href="https://www.youtube.com/@davidsha" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
 
-        <ul class="social-list">
-          
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/david-sha/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://twitter.com/d4vidsha" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="https://github.com/d4vidsha" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://discord.gg/FH2YdzzGcz" class="social-link">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-          <li class="social-item">
-            <a href="https://www.youtube.com/@davidsha" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/d4vidsha" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://discord.gg/FH2YdzzGcz" class="social-link">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I am passionate about computer science and the use of artificial
+              intelligence for the benefit of society. I am a student at the
+              University of Melbourne, studying a Bachelor of Science (Computer
+              Science). I am currently looking for a summer internship in the
+              field of software engineering, data science, or artificial
+              intelligence.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I am passionate about computer science and the use of artificial intelligence for the benefit of society.
-            I am a student at the University of Melbourne, studying a Bachelor of Science (Computer Science).
-            I am currently looking for a summer internship in the field of software engineering, data science, or
-            artificial intelligence.
-          </p>
+            <p>
+              I can work with a variety of programming languages, including
+              Python, Java, C, and JavaScript. I have also had my fair share of
+              academic tutoring experience, having tutored a number of high
+              schoool students in mathematics.
+            </p>
+          </section>
 
-          <p>
-            I can work with a variety of programming languages, including Python, Java, C, and JavaScript.
-            I have also had my fair share of academic tutoring experience, having tutored a number of high schoool students in mathematics.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Studying</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Learning about computer science and artificial intelligence,
+                    and how to apply them to solve real-world problems.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Studying</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Coding</h4>
 
-                <p class="service-item-text">
-                  Learning about computer science and artificial intelligence, and how to apply them to solve real-world problems.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Using Python for data analysis, Java for object-oriented
+                    programming, C for algorithms and data structures, and
+                    JavaScript for web development.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Automation</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Professional experience in automating business processes
+                    using Zapier, Make, and n8n.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Coding</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  Using Python for data analysis, Java for object-oriented programming, C for algorithms and data structures, and JavaScript for web development.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Documentation</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    Becoming more and more interested in documenting life and
+                    sharing them with others.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Automation</h4>
-
-                <p class="service-item-text">
-                  Professional experience in automating business processes using Zapier, Make, and n8n.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Documentation</h4>
-
-                <p class="service-item-text">
-                  Becoming more and more interested in documenting life and sharing them with others.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-raphael-azot.png"
+                      alt="Raphael Azot"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Raphael Azot
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-raphael-azot.png" alt="Raphael Azot" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Raphael Azot</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    David was hired to create an integration between n8n and Datagma. He was very proactive and helpful.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      David was hired to create an integration between n8n and
+                      Datagma. He was very proactive and helpful.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-mo-h.png"
+                      alt="Mohammad H"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mohammad H
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-mo-h.png" alt="Mohammad H" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohammad H</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    David provides a great service. He tutored me during the lockdowns in 2020 while I was struggling with Year 11 Math Methods. I was pretty sure I was going to drop it as a subject, but I decided to give tutoring a shot before I gave up entirely. Thanks to David, I am confident in my mathematical ability this year; undertaking Math Methods with a higher standard than I thought I would be able to achieve before David's tutoring.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      David provides a great service. He tutored me during the
+                      lockdowns in 2020 while I was struggling with Year 11 Math
+                      Methods. I was pretty sure I was going to drop it as a
+                      subject, but I decided to give tutoring a shot before I
+                      gave up entirely. Thanks to David, I am confident in my
+                      mathematical ability this year; undertaking Math Methods
+                      with a higher standard than I thought I would be able to
+                      achieve before David's tutoring.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-maria-curtolo.png"
+                      alt="Maria Curtolo"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Maria Curtolo
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-maria-curtolo.png" alt="Maria Curtolo" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Maria Curtolo</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    David is a talented maths student with a very deep knowledge of the concepts covered. He would make an amazing maths tutor. I have no hesitation in recommending him for any tutoring job.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      David is a talented maths student with a very deep
+                      knowledge of the concepts covered. He would make an
+                      amazing maths tutor. I have no hesitation in recommending
+                      him for any tutoring job.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-anthony-lynch.png"
+                      alt="Anthony Lynch"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Anthony Lynch
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-anthony-lynch.png" alt="Anthony Lynch" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anthony Lynch</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    David is very knowledge about maths and is a deep thinker often going beyond the surface of each concept. He is very helpful and patient with his approach to working with others. I would highly recommend working with David.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      David is very knowledge about maths and is a deep thinker
+                      often going beyond the surface of each concept. He is very
+                      helpful and patient with his approach to working with
+                      others. I would highly recommend working with David.
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://n8n.io/">
+                  <img
+                    src="./assets/images/logo-n8n-white.png"
+                    alt="n8n logo"
+                  />
+                </a>
+              </li>
 
-          <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://www.thejoinary.com/">
+                  <img
+                    src="./assets/images/logo-the-joinary-yellow.png"
+                    alt="The Joinary logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="https://n8n.io/">
-                <img src="./assets/images/logo-n8n-white.png" alt="n8n logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="https://datagma.com/">
+                  <img
+                    src="./assets/images/logo-datagma.png"
+                    alt="Datagma logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <li class="clients-item">
-              <a href="https://www.thejoinary.com/">
-                <img src="./assets/images/logo-the-joinary-yellow.png" alt="The Joinary logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://datagma.com/">
-                <img src="./assets/images/logo-datagma.png" alt="Datagma logo">
-              </a>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
-      -->
+-->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Melbourne</h4>
+                <span>Feb. 2024 — Nov. 2025</span>
+                <p class="timeline-text">
+                  Master of Information Technology, specialising in Artificial
+                  Intelligence.
+                </p>
+              </li>
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Melbourne</h4>
+                <span>Feb. 2021 — Nov. 2023</span>
+                <p class="timeline-text">
+                  Bachelor of Science in Computing and Software Systems with
+                  subjects in Economics and Mathematics.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <li class="timeline-item">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
 
-              <h4 class="h4 timeline-item-title">University of Melbourne</h4>
-
-              <span>2021 — 2023</span>
-
-              <p class="timeline-text">
-                Major in Computing and Software Systems with additional subjects in Economics and Mathematics.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Development Intern at Amazon Web Services (AWS)
+                </h4>
+                <span>Dec. 2024 — Feb. 2025</span>
+                <p class="timeline-text">
+                  <!-- • Reduced image sizes by 87.8% by recreating frontend and backend Dockerfiles.<br>
+          • Improved build and deployment times by 90% using Docker BuildKit.<br>
+          • Implemented company-wide linters and formatters policies (ESLint, Black, isort, Flake8, mypy). -->
+                </p>
+              </li>
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Associate Software Engineer at Sincidium
+                </h4>
+                <span>Jan. 2024 — Jul. 2024</span>
+                <p class="timeline-text">
+                  • Reduced image sizes by 87.8% by recreating frontend and
+                  backend Dockerfiles.<br />
+                  • Improved build and deployment times by 90% using Docker
+                  BuildKit.<br />
+                  • Implemented company-wide linters and formatters policies
+                  (ESLint, Black, isort, Flake8, mypy).
+                </p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer Intern at Sincidium
+                </h4>
+                <span>Sep. 2023 — Jan. 2024</span>
+                <p class="timeline-text">
+                  • Introduced a new CI pipeline using GitHub Actions.<br />
+                  • Designed and iterated a dashboard page in Next.js for the
+                  company's main product.
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Automation expert at The Joinary</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Developer at The Joinary</h4>
+                <span>Jun. 2021 — Jun. 2024</span>
+                <p class="timeline-text">
+                  • Automated business workflows using Zapier and Python,
+                  integrating SaaS tools.<br />
+                  • Integrated platforms using AWS Lambda for 5000+ participants
+                  over two years.<br />
+                  • Created business solutions for Hero HQ, now in daily use for
+                  over 2.5 years.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <span>2021 — Present</span>
-
-              <p class="timeline-text">
-                Creating workflows for businesses to automate their processes.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mathematics Tutor</h4>
-
-              <span>2017 — Present</span>
-
-              <p class="timeline-text">
-                Teach students mathematics and help them understand concepts to a deeper level.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- <section class="skill">
+          <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -643,255 +715,298 @@
           </ul>
 
         </section> -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>C</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>C</button>
+              <li class="filter-item">
+                <button data-filter-btn>C</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/d4vidsha/personal-website" target="_blank">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                  <img src="./assets/images/project-personal-website.png" alt="personal website" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>C</button>
+                </li>
 
-                <h3 class="project-title">Personal website</h3>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-                <p class="project-category">Web development</p>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/d4vidsha/scheduler"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-scheduler.png"
+                      alt="scheduler"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="c">
-              <a href="https://github.com/d4vidsha/comp20003/tree/master/ass2" target="_blank">
+                  <h3 class="project-title">Scheduler</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/d4vidsha/personal-website"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/project-map.png" alt="point-region quadtrees" loading="lazy">
-                </figure>
+                    <img
+                      src="./assets/images/project-personal-website.png"
+                      alt="personal website"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Point-Region Quadtrees</h3>
+                  <h3 class="project-title">Personal website</h3>
 
-                <p class="project-category">C</p>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="c"
+              >
+                <a
+                  href="https://github.com/d4vidsha/comp20003/tree/master/ass2"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="c">
-              <a href="https://github.com/d4vidsha/rpc-framework" target="_blank">
+                    <img
+                      src="./assets/images/project-map.png"
+                      alt="point-region quadtrees"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Point-Region Quadtrees</h3>
 
-                  <img src="./assets/images/project-rpc-framework.png" alt="rpc-framework" loading="lazy">
-                </figure>
+                  <p class="project-category">C</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">RPC Framework</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="c"
+              >
+                <a
+                  href="https://github.com/d4vidsha/rpc-framework"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">C</p>
+                    <img
+                      src="./assets/images/project-rpc-framework.png"
+                      alt="rpc-framework"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">RPC Framework</h3>
 
-          </ul>
+                  <p class="project-category">C</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://blog.davidsha.me">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog.jpg"
+                      alt="My blog"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Blog</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="https://blog.davidsha.me">
+                      <time datetime="2022-02-23">Jan 9, 2023</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog.jpg" alt="My blog" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">My Blog</h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Blog</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Jan 9, 2023</time>
+                    <p class="blog-text">
+                      This is the place where I share my most recent projects,
+                      thoughts, and ideas.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">My Blog</h3>
-
-                  <p class="blog-text">
-                    This is the place where I share my most recent projects, thoughts, and ideas.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402589.824632653!2d144.7722783977642!3d-37.971691291608515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1673263062473!5m2!1sen!2sau"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402589.824632653!2d144.7722783977642!3d-37.971691291608515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1673263062473!5m2!1sen!2sau"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        
-        <section class="contact-form">
+            <form action="" class="form" data-form id="contact-form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="firstname"
+                  class="form-input"
+                  placeholder="First name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="text"
+                  name="lastname"
+                  class="form-input"
+                  placeholder="Last name"
+                  required
+                  data-form-input
+                />
 
-          <form action="" class="form" data-form id="contact-form">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-            <div class="input-wrapper">
-              <input type="text" name="firstname" class="form-input" placeholder="First name" required data-form-input>
-              
-              <input type="text" name="lastname" class="form-input" placeholder="Last name" required data-form-input>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
